@@ -64,15 +64,15 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Composable
 fun BirthdayCardPreview() {
     CartaDeCumpleañosTheme {
-        GreetingText("Happy Birthday Ruben!", "De Daniel Rueda")
+        GreetingImage("Happy Birthday Ruben!", "De Daniel Rueda")
 
     }
 }
-/*
+
 @Composable
 fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
     val image = painterResource(R.drawable.androidparty)
@@ -80,4 +80,4 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
         painter = image,
         contentDescription = null
     )
-}*/
+}
